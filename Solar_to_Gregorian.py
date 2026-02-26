@@ -18,7 +18,7 @@ def AutoConv(dt):
     miladi = datetime(1384, 10, 3)
     delta = shamsi - miladi
 
-    if date.year() < 1500:
+    if int(dt.strftime("%Y")) < 1500:
         return (dt + delta)
     else:
         return (dt - delta)
